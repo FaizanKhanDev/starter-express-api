@@ -1,1 +1,13 @@
-node_modules
+.DS_Store
+.env
+
+node_modules/
+npm-debug.log
+yarn-error.log
+idea/
+frontend/yarn.lock
+frontend/package-lock.json
+package-lock.json
+yarn.lock
+.vercel
+frontend/

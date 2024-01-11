@@ -1,0 +1,17 @@
+const Activity = require('../models/activity.model');
+
+/// //////////////////////////////////////////////////////////////////////
+/// //////////////////// Create Activity /////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////
+async function create(data) {
+  var e = Activity();
+
+  e.name = data.name;
+  e.createdAt = Date.now();
+  e.creator = data.creator;
+  await e.save();
+}
+
+module.exports = {
+  create,
+};
